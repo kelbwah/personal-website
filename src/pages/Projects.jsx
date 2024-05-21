@@ -17,7 +17,6 @@ import { Button } from "@/components/ui/button";
 import Airbnb from "../assets/airbnb_logo.jpeg";
 import Github from "../assets/github.png";
 import DevIcon from "../../public/dev-icon.png";
-
 function ProjectCard({ summary, projectTitle, projectLogo, dates, websiteLink, isDeployed }) {
     return (
         <Card 
@@ -101,7 +100,8 @@ function Projects() {
                             summary={`A parser for a programming language called "While" as seen in my Theory of Computation class.
                             The goal is to write a parser and then translate the language to Go.`}
                             dates="Apr 2024 - Present"
-                            isDeployed={false}
+                            websiteLink="https://github.com/kelbwah/while-language.git"
+                            isDeployed={true}
                         />
                     </div>
                 </div>
