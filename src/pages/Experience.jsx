@@ -14,6 +14,7 @@ import Degreecat from "../assets/degreecat_logo.jpeg";
 import DMA from "../assets/dma_image.jpeg";
 import Proofpoint from "../assets/proofpoint_logo.webp";
 import Apple from "../assets/apple_logo.jpeg";
+import BinaryTint from "../assets/binarytint_logo.png";
 import {
   FaDocker,
   FaBitbucket,
@@ -24,6 +25,7 @@ import {
   FaHtml5,
   FaApple,
 } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
 import { IoLogoJavascript, IoHardwareChip } from "react-icons/io5";
 import {
   SiJira,
@@ -126,6 +128,7 @@ function Experience() {
       <TechnologiesComponent icon={<SiTailwindcss />} name="TailwindCSS" />
     ),
     Apple: <TechnologiesComponent icon={<FaApple />} name="Apple" />,
+    Golang: <TechnologiesComponent icon={<FaGolang />} name="Golang" />,
     "Customer Service": (
       <TechnologiesComponent
         icon={<RiCustomerService2Fill />}
@@ -176,7 +179,16 @@ function Experience() {
           </div>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-4 ease-in-out duration-200 md:mt-6 lg:mt-6">
             <ExperienceCard
-              jobSummary="Currently working on the Email Fraud Defense Team (EFD). Doing frontend work in React/Redux and backend REST API work in Javascript/Docker/Swagger. Helping build internal tooling and plugins for admins. Involved in Agile process with Jira (Scrums/Standups/Retros)."
+              jobSummary="Worked as a Founding Software Engineer Intern creating automation scripts in Python. Worked on helping create knowledge base for AI voice agents and scaffolding for custom VOIP handler using Twilio and Javascript."
+              tags={[tagsMap["Python"], tagsMap["Javascript"], tagsMap["AWS"]]}
+              index={1}
+              orgIcon={BinaryTint}
+              jobTitle="Software Engineer Intern"
+              organization="BinaryTint"
+              dates="September 2024 - January 2025"
+            />
+            <ExperienceCard
+              jobSummary="Worked on the Email Fraud Defense Team (EFD). Did frontend work in React/Redux and backend REST API work in Javascript/Docker/Swagger. Helping build internal tooling and plugins for admins. Involved in Agile process with Jira (Scrums/Standups/Retros)."
               tags={[
                 tagsMap["React"],
                 tagsMap["Redux"],
@@ -187,12 +199,13 @@ function Experience() {
                 tagsMap["Swagger"],
                 tagsMap["Bitbucket"],
                 tagsMap["Jira"],
+                tagsMap["Golang"],
               ]}
               index={1}
               orgIcon={Proofpoint}
               jobTitle="Software Engineer Intern"
               organization="Proofpoint"
-              dates="Dec 2023 - Present"
+              dates="Dec 2023 - August 2024"
             />
             <ExperienceCard
               jobSummary="Worked in a startup environment to help build a college planning SaaS. Helped mentor some junior developers and worked in a full-stack environment. Doing backend work in MongoDB, Express.js, Node.js, and AWS. Frontend work primarily in React/Redux."
